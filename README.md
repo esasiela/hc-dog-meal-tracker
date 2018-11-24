@@ -2,7 +2,7 @@
 
 The HC Dog Meal Tracker is a very simple device designed to track whether the pups have been fed breakfast and dinner.  When our family members have differing schedules, it is easy to loose track of these things.  The days of sticky notes are over!
 
-Arduino Nano controls things.  There is a single push button, debounced using HC Bouncy Button library, and two LED indicators to show the state.
+Adafruit 5v Trinket (very small Arduino clone) controls the system.  There is a single push button, debounced using HC Bouncy Button library, and two LED indicators to show the state.
 
 ## States
 

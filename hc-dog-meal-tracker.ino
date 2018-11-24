@@ -1,9 +1,16 @@
 
 #include <HC_BouncyButton.h>
 
+// LED1 -> output indicator for breakfast
+// LED2 -> output indicator for dinner
+// LED_BUTTON -> output indicator built into the pushbutton
+// BUTTON1 -> push button input
+
 #define PIN_LED1 0
 #define PIN_LED2 1
+
 #define PIN_BUTTON1 2
+#define PIN_LED_BUTTON 3
 
 // how long to live in state 1 (breakfast served) in millis (54000000 = 15 hours)
 #define TTL_BREAKFAST 54000000
@@ -31,6 +38,10 @@ void setup() {
   
   pinMode(PIN_LED2, OUTPUT);
   digitalWrite(PIN_LED2, LOW);
+
+  // on by default
+  pinMode(PIN_LED_BUTTON, OUTPUT);
+  digitalWrite(PIN_LED_BUTTON, HIGH);
 
   pinMode(PIN_BUTTON1, INPUT_PULLUP);
 
@@ -84,4 +95,3 @@ void loop() {
     digitalWrite(PIN_LED2, LOW);
   }
 }
-

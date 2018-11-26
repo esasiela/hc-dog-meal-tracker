@@ -4,6 +4,10 @@ The HC Dog Meal Tracker is a very simple device designed to track whether the pu
 
 Adafruit 5v Trinket (very small Arduino clone) controls the system.  There is a single push button, debounced using HC Bouncy Button library, and two LED indicators to show the state.
 
+## Homepage
+
+More details about the project, including some spiffy pictures are at [Hedge Court](https://www.hedgecourt.com/robots/dogMealTracker/).
+
 ## States
 
 There are four states:
